@@ -26,7 +26,7 @@ gulp.task('browser-sync', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
+    return gulp.src('scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest(''));
 });
@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('static/*.js', ['scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('scss/style.scss', ['sass']);
 });
 
 // Default Task
