@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+  </div>
+
+  <div class="wrapper-contenu">
+
+    <div id="intro">
+      <p>{{post.get_field('introduction')}}</p>
+    </div>
+
+    <div class="btn">
+      <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
+    </div>
+
+  </div>
+
+  {% for post in posts %}
+
+    <article>
+
+      {% if post.get_thumbnail %}
+        <div class="post-thumbnail" style="background-image: url('{{post.thumbnail.src}}')">
+        </div>
+      {% endif %}
+
+      <div class="wrapper-contenu">
+        <h2><a href="{{post.link}}">{{post.title}}</a></h2>
+        <p>{{post.post_content|excerpt(30)}}</p>
+      </div>
+
+    </article>
+
+  {% endfor %}
+
+{% endblock %}
