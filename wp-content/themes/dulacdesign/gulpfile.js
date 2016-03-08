@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
   gulp.watch('static/*.js', ['scripts']);
   gulp.watch('scss/style.scss', ['sass']);
+  gulp.watch('*.twig', ['default']);
 });
 
 // Default Task

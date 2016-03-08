@@ -5,34 +5,102 @@
   <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
   </div>
 
-  <div class="wrapper-contenu">
+  <div id="informations">
 
-    <div id="intro">
-      <p>{{post.get_field('introduction')}}</p>
-    </div>
+    <div class="wrapper-contenu">
 
-    <div class="btn">
-      <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
+      <div id="intro">
+        <p>{{post.get_field('introduction')}}</p>
+      </div>
+
+      <div class="btn">
+        <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
+      </div>
+
     </div>
 
   </div>
 
-  {% for post in posts %}
+  <article>
 
-    <article>
+    <div class="blog-img">
+      <img src="{{TimberImage(post.get_field('prj1_photo')).src}}">
+    </div>
 
-      {% if post.get_thumbnail %}
-        <div class="post-thumbnail" style="background-image: url('{{post.thumbnail.src}}')">
-        </div>
-      {% endif %}
-
+    <div class="blog-titre">
       <div class="wrapper-contenu">
-        <h2><a href="{{post.link}}">{{post.title}}</a></h2>
-        <p>{{post.post_content|excerpt(30)}}</p>
+        <h2>{{post.get_field('prj1_titre')}}</h2>
       </div>
+    </div>
 
-    </article>
+    <div class="blog-desc">
+      <div class="wrapper-contenu">
+        <p>{{post.get_field('prj1_desc')}}</p>
+      </div>
+    </div>
 
-  {% endfor %}
+  </article>
+
+  <article>
+
+    <div class="blog-img">
+      <img src="{{TimberImage(post.get_field('prj2_photo')).src}}">
+    </div>
+
+    <div class="blog-titre">
+      <div class="wrapper-contenu">
+        <h2>{{post.get_field('prj2_titre')}}</h2>
+      </div>
+    </div>
+
+    <div class="blog-desc">
+      <div class="wrapper-contenu">
+        <p>{{post.get_field('prj2_desc')}}</p>
+      </div>
+    </div>
+
+  </article>
+
+  <article>
+
+    <div class="blog-img">
+      <img src="{{TimberImage(post.get_field('prj3_photo')).src}}">
+    </div>
+
+    <div class="blog-titre">
+      <div class="wrapper-contenu">
+        <h2>{{post.get_field('prj3_titre')}}</h2>
+      </div>
+    </div>
+
+    <div class="blog-desc">
+      <div class="wrapper-contenu">
+        <p>{{post.get_field('prj3_desc')}}</p>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="citation">
+      <p>{{post.get_field('citation')}}</p>
+  </div>
+
+  <div id="creations" style="background-image: url('{{ theme.path }}/bg-creations.jpg')">
+    <div id="lien-creations">
+      <a href="{{post.get_field('lien_page_realisation')}}">Voir toutes nos réalisations</a>
+    </div>
+  </div>
+
+  <div id="contact" class="bloc">
+
+    <div class="wrapper-contenu">
+
+      <h2>Contactez-nous</h2>
+
+      <p>{{post.get_field('ctct_desc')}}</p>
+
+    </div>
+
+  </div>
 
 {% endblock %}
