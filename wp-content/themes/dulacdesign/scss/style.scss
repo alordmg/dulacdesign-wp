@@ -8,6 +8,10 @@
 
 @import 'normalize';
 
+* {
+  box-sizing: border-box;
+}
+
 body, p, span, a {
   font-family: 'Roboto', sans-serif;
 }
@@ -103,39 +107,36 @@ article {
     font-weight: 300;
     margin-top: 0px;
   }
-}
 
-article {
+  .blog-img {
 
- .blog-img {
+     img {
+       max-width: 100%;
+     }
+   }
 
-    img {
-      max-width: 100%;
-    }
-  }
+   .blog-titre {
 
-  .blog-titre {
+     h2 {
+       text-transform: uppercase;
+       font-weight: 900;
+       margin: 20px 0px;
+       text-decoration: none;
+       color: black;
+       letter-spacing: 4px;
+       font-size: 24px;
+     }
+   }
 
-    h2 {
-      text-transform: uppercase;
-      font-weight: 900;
-      margin: 20px 0px;
-      text-decoration: none;
-      color: black;
-      letter-spacing: 4px;
-      font-size: 24px;
-    }
-  }
+   .blog-desc {
 
-  .blog-desc {
-
-    p {
-      font-size: 18px;
-      line-height: 1.6em;
-      font-weight: 300;
-      margin-top: 0px;
-    }
-  }
+     p {
+       font-size: 18px;
+       line-height: 1.6em;
+       font-weight: 300;
+       margin-top: 0px;
+     }
+   }
 }
 
 article.citation {
@@ -251,8 +252,6 @@ footer {
 
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
 
   #hero {
@@ -275,5 +274,94 @@ footer {
       margin: 0 auto;
     }
 
+  }
+
+  .wrapper-contenu {
+    padding: 0px 15px;
+  }
+
+  article {
+    padding-bottom: 0;
+
+    .gauche {
+      float: left;
+    }
+
+    .centre {
+      float: left;
+      max-width: 28.888%;
+    }
+
+    .droite {
+      float: right;
+    }
+
+    .blog-contenu {
+      max-width: 35.556%;
+    }
+
+    .blog-img {
+      max-width: 64.444%;
+      margin-bottom: -4px;
+    }
+  }
+
+  .citation {
+    //max-width: 35.556%;
+    //float: right;
+  }
+
+  article, #creations, #contact {
+    float: left;
+  }
+
+  #contact {
+
+    h2 {
+      margin-top: 70px;
+    }
+
+    p {
+      text-align: center;
+      margin: 0 40px;
+      width: 90%;
+    }
+
+    form {
+      margin-top: 50px;
+      width: 100%;
+
+      span input, span textarea {
+        //display: inline-block;
+        min-width: 100%;
+        margin: 0;
+      }
+
+      p {
+        text-align: left;
+        margin-top: 30px;
+        //max-width: 90%;
+        //margin: 50px auto 0;
+      }
+    }
+  }
+
+  footer {
+    clear: both;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+
+  .wrapper-contenu {
+    padding: 0px 15px;
+
+    #intro {
+      max-width: 900px;
+    }
+
+    .btn {
+      max-width: 275px;
+    }
   }
 }

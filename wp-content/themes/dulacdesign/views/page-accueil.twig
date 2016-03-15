@@ -23,67 +23,80 @@
 
   <article>
 
-    <div class="blog-img">
+    <div class="blog-img droite">
+      <!-- <div style="background-image: url('{{TimberImage(post.get_field('prj1_photo')).src}}')"></div> -->
       <img src="{{TimberImage(post.get_field('prj1_photo')).src}}">
     </div>
 
-    <div class="blog-titre">
-      <div class="wrapper-contenu">
-        <h2>{{post.get_field('prj1_titre')}}</h2>
-      </div>
-    </div>
+    <div class="blog-contenu gauche">
 
-    <div class="blog-desc">
-      <div class="wrapper-contenu">
-        <p>{{post.get_field('prj1_desc')}}</p>
+      <div class="blog-titre">
+        <div class="wrapper-contenu">
+          <h2>{{post.get_field('prj1_titre')}}</h2>
+        </div>
       </div>
+
+      <div class="blog-desc">
+        <div class="wrapper-contenu">
+          <p>{{post.get_field('prj1_desc')}}</p>
+        </div>
+      </div>
+
     </div>
 
   </article>
 
   <article>
 
-    <div class="blog-img">
+    <div class="blog-img gauche">
       <img src="{{TimberImage(post.get_field('prj2_photo')).src}}">
     </div>
 
-    <div class="blog-titre">
-      <div class="wrapper-contenu">
-        <h2>{{post.get_field('prj2_titre')}}</h2>
-      </div>
-    </div>
+    <div class="blog-contenu droite">
 
-    <div class="blog-desc">
-      <div class="wrapper-contenu">
-        <p>{{post.get_field('prj2_desc')}}</p>
+      <div class="blog-titre">
+        <div class="wrapper-contenu">
+          <h2>{{post.get_field('prj2_titre')}}</h2>
+        </div>
       </div>
+
+      <div class="blog-desc">
+        <div class="wrapper-contenu">
+          <p>{{post.get_field('prj2_desc')}}</p>
+        </div>
+      </div>
+
     </div>
 
   </article>
 
   <article>
 
-    <div class="blog-img">
+    <div class="blog-img droite">
       <img src="{{TimberImage(post.get_field('prj3_photo')).src}}">
     </div>
 
-    <div class="blog-titre">
-      <div class="wrapper-contenu">
-        <h2>{{post.get_field('prj3_titre')}}</h2>
-      </div>
-    </div>
+    <div class="blog-contenu gauche">
 
-    <div class="blog-desc">
-      <div class="wrapper-contenu">
-        <p>{{post.get_field('prj3_desc')}}</p>
+      <div class="blog-titre">
+        <div class="wrapper-contenu">
+          <h2>{{post.get_field('prj3_titre')}}</h2>
+        </div>
       </div>
+
+      <div class="blog-desc">
+        <div class="wrapper-contenu">
+          <p>{{post.get_field('prj3_desc')}}</p>
+        </div>
+      </div>
+
     </div>
 
   </article>
 
   <article class="citation">
       <p>{{post.get_field('citation')}}</p>
-  </div>
+  </article>
 
   <div id="creations" style="background-image: url('{{ theme.path }}/bg-creations.jpg')">
     <div id="lien-creations">
