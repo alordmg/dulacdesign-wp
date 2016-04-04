@@ -33,18 +33,20 @@ h1 {
 
 #nav-main {
 
-  #nav-icon {
+  .nav-icon {
     position: absolute;
     top: 20px;
-    right:20px;
+    right: 20px;
   }
 
   #navigation {
     position: absolute;
-    display: none;
+    top: -100%;
     width: 100vw;
     background-color: white;
     padding: 40px;
+    -webkit-transition: top 0.5s ease; /* Safari */
+    transition: top 0.5s ease;
 
     ul {
       padding: 0;
@@ -74,7 +76,9 @@ h1 {
   }
 
   .nav-ouvert {
-    display: block !important;
+    top: 0 !important;
+    -webkit-transition: top 0.5s ease; /* Safari */
+    transition: top 0.5s ease;
   }
 }
 
