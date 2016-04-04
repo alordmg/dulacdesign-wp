@@ -320,6 +320,27 @@ footer {
     height: 800px;
   }
 
+  #navigation {
+    padding: 60px;
+
+    ul {
+      padding: 0;
+
+      li {
+        margin-bottom: 40px;
+
+        a {
+          color: black;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: 500;
+          text-decoration: none;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
   #informations {
     padding-bottom: 40px;
 
