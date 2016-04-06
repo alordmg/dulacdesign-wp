@@ -3,6 +3,9 @@
 {% block content %}
 
   <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+    <div id="lien-decouvrir" class="btn">
+      <a href="{{post.get_field('lien_decouvrir')}}">Découvrir</a>
+    </div>
   </div>
 
   <div id="informations">
@@ -24,24 +27,27 @@
   <article>
 
     <div class="blog-img droite">
-      <div style="background-image: url('{{TimberImage(post.get_field('prj1_photo')).src}}')"></div>
-      <!-- <img src="{{TimberImage(post.get_field('prj1_photo')).src}}"> -->
+      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj1_photo')).src}}')"></div>
     </div>
 
     <div class="blog-contenu gauche">
 
-      <div class="blog-titre">
-        <div class="wrapper-contenu">
+      <div class="wrapper-contenu">
+
+        <div class="blog-titre">
           <h2>{{post.get_field('prj1_titre')}}</h2>
         </div>
-      </div>
 
-      <div class="blog-desc">
-        <div class="wrapper-contenu">
+        <div class="blog-desc">
           <p>{{post.get_field('prj1_desc')}}</p>
         </div>
+
       </div>
 
+    </div>
+
+    <div class="blog-img-2">
+      <img src="http://placehold.it/300x300">
     </div>
 
   </article>
@@ -49,7 +55,7 @@
   <article>
 
     <div class="blog-img gauche">
-      <img src="{{TimberImage(post.get_field('prj2_photo')).src}}">
+      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj2_photo')).src}}')"></div>
     </div>
 
     <div class="blog-contenu droite">
@@ -73,21 +79,21 @@
   <article>
 
     <div class="blog-img droite">
-      <img src="{{TimberImage(post.get_field('prj3_photo')).src}}">
+      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj3_photo')).src}}')"></div>
     </div>
 
     <div class="blog-contenu gauche">
 
-      <div class="blog-titre">
-        <div class="wrapper-contenu">
+      <div class="wrapper-contenu">
+
+        <div class="blog-titre">
           <h2>{{post.get_field('prj3_titre')}}</h2>
         </div>
-      </div>
 
-      <div class="blog-desc">
-        <div class="wrapper-contenu">
+        <div class="blog-desc">
           <p>{{post.get_field('prj3_desc')}}</p>
         </div>
+
       </div>
 
     </div>
@@ -95,7 +101,7 @@
   </article>
 
   <article class="citation">
-      <p>{{post.get_field('citation')}}</p>
+      <div class="citation-texte"><p>{{post.get_field('citation')}}</p></div>
   </article>
 
   <div id="creations" style="background-image: url('{{ theme.path }}/bg-creations.jpg')">

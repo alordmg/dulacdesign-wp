@@ -28,6 +28,9 @@ h1 {
 
   img {
     position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 999;
   }
 }
 
@@ -37,9 +40,11 @@ h1 {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 999;
   }
 
   #navigation {
+    z-index: 999;
     position: absolute;
     top: -100%;
     width: 100vw;
@@ -83,14 +88,46 @@ h1 {
 }
 
 #informations {
-  background-color: #f1f2f2;
+  //background-color: #f1f2f2;
 }
 
 #hero {
   // Le background-image est inline
+  position: relative;
   background-size: cover;
   background-position: center center;
   height: 460px;
+}
+
+#lien-decouvrir {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 183px;
+
+  a {
+    color: white;
+    border-color: white;
+  }
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+
+  a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 0px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .wrapper-contenu {
@@ -103,24 +140,6 @@ h1 {
     p {
       line-height: 1.6em;
       font-weight: 500;
-    }
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 30px;
-
-    a {
-      display: inline-block;
-      border: 2px solid black;
-      padding: 10px 0px;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-weight: 700;
-      text-decoration: none;
-      color: black;
     }
   }
 }
@@ -235,7 +254,7 @@ article.citation {
 #contact {
 
   h2 {
-    text-align: center;
+    //text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
   }
@@ -310,14 +329,38 @@ footer {
     text-align: center;
     font-size: 14px;
   }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media only screen
   and (min-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
+  h1 {
+    img {
+      width: 227px;
+    }
+  }
+
+  #nav-main {
+
+    .nav-icon {
+      //position: absolute;
+      top: 40px;
+      right: 30px;
+      //z-index: 999;
+    }
+  }
+
   #hero {
     height: 800px;
+
+    #lien-decouvrir {
+      max-width: 330px;
+    }
   }
 
   #navigation {
@@ -343,6 +386,7 @@ footer {
 
   #informations {
     padding-bottom: 40px;
+    background-color: #f1f2f2;
 
     #intro {
       text-align: center;
@@ -360,11 +404,16 @@ footer {
   }
 
   .wrapper-contenu {
-    padding: 0px 15px;
+    padding: 0px 30px;
   }
 
   article {
     padding-bottom: 0;
+    height: 400px;
+
+    .blog-titre h2 {
+      margin: 35px 0px;
+    }
 
     .gauche {
       float: left;
@@ -384,14 +433,35 @@ footer {
     }
 
     .blog-img {
-      max-width: 64.444%;
+      width: 64.444%;
+      height: 100%;
       margin-bottom: -4px;
+
+      .img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+      }
+    }
+
+    .blog-desc {
+
+      p {
+        font-size: 16px;
+      }
     }
   }
 
   .citation {
-    //max-width: 35.556%;
-    //float: right;
+    position: relative;
+    width: 100%;
+
+    .citation-texte {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   article, #creations, #contact {
@@ -402,6 +472,7 @@ footer {
 
     h2 {
       margin-top: 70px;
+      text-align: center;
     }
 
     p {
@@ -446,6 +517,24 @@ footer {
 
     .btn {
       max-width: 275px;
+    }
+  }
+
+  article {
+    height: 600px;
+
+    .blog-contenu {
+      height: 300px;
+    }
+
+    .blog-img-2 {
+      width: 100%;
+      height: 300px;
+
+      img {
+        //min-height: 100%;
+        //width: 100%;
+      }
     }
   }
 }
