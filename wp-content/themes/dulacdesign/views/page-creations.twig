@@ -3,36 +3,32 @@
 {% block content %}
 
   <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+    <div id="titre-page">
+      <h1>{{ post.title }}</h1>
+    </div>
   </div>
 
-  <div class="wrapper-contenu">
-
-    <div id="intro">
-      <p>{{post.get_field('introduction')}}</p>
-    </div>
-
-    <div class="btn">
-      <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
-    </div>
-
+  <div id="ambiances">
+    <ul>
+      <li><a href="#">Ambiance 1</a></li>
+      <li><a href="#">Ambiance 2</a></li>
+      <li><a href="#">Ambiance 3</a></li>
+      <li><a href="#">Ambiance 4</a></li>
+      <li><a href="#">Ambiance 5</a></li>
+      <li><a href="#">Ambiance 6</a></li>
+    </ul>
   </div>
 
-  {% for post in posts %}
+  <div id="liste-creations">
 
-    <article>
-
-      {% if post.get_thumbnail %}
-        <div class="post-thumbnail" style="background-image: url('{{post.thumbnail.src}}')">
-        </div>
-      {% endif %}
-
-      <div class="wrapper-contenu">
-        <h2><a href="{{post.link}}">{{post.title}}</a></h2>
-        <p>{{post.post_content|excerpt(30)}}</p>
+    <div class="creation" style="background-image: url('http://placehold.it/320x250')">
+      <div class="infos">
+        <div class="titre"><a href="#">Lorem ipsum dolor sit amet consectetur</a></div>
+        <div class="date"><a href="#">20 décembre 2016</a></div>
       </div>
+    </div>
 
-    </article>
+  </div>
 
-  {% endfor %}
 
 {% endblock %}

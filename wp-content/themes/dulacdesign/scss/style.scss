@@ -99,7 +99,7 @@ h1 {
   height: 460px;
 }
 
-#lien-decouvrir {
+#titre-page {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,6 +110,17 @@ h1 {
     color: white;
     border-color: white;
   }
+}
+
+.page-template-template-creations #titre-page,
+.page-template-template-nos-valeurs #titre-page,
+.page-template-template-nos-valeurs #titre-page,
+.page-template-template-contact #titre-page {
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -335,6 +346,80 @@ footer {
   }
 }
 
+// PAGE CRÉATIONS
+
+#ambiances {
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      height: 50px;
+      background-color: #DEDEDE;
+      border-bottom: 1px solid black;
+
+      a {
+        line-height: 50px;
+        vertical-align: middle;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: black;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+#liste-creations {
+  text-align: center;
+
+  .creation {
+    height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+
+    .infos {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .titre {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .date {
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 10px;
+        color: white;
+      }
+
+      .date:before {
+        content: "- ";
+      }
+
+      .date:after {
+        content: " -";
+      }
+    }
+  }
+}
+
 @media only screen
   and (min-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -358,7 +443,7 @@ footer {
   #hero {
     height: 800px;
 
-    #lien-decouvrir {
+    .btn {
       max-width: 330px;
     }
   }
