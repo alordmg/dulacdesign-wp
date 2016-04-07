@@ -586,6 +586,14 @@ footer {
     }
   }
 
+  #liste-creations {
+    text-align: center;
+
+    .creation {
+      height: 350px;
+    }
+  }
+
   footer {
     clear: both;
   }
@@ -620,6 +628,53 @@ footer {
         //min-height: 100%;
         //width: 100%;
       }
+    }
+  }
+
+  .wrapper-page {
+    max-width: 1130px;
+    margin: auto;
+  }
+
+  #ambiances {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        height: 50px;
+        padding: 5px 20px;
+        width: calc(16.6666% - 4px);
+        display: inline-block;
+        border: 1px solid black;
+        background-color: white;
+
+        a {
+          line-height: 50px;
+          vertical-align: middle;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  #liste-creations {
+    text-align: center;
+
+    .creation {
+      height: 250px;
+      width: calc(33.333% - 4px);
+      float: left;
+      margin: 0.010619469%;
     }
   }
 }
