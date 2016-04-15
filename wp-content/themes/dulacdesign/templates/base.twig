@@ -8,15 +8,19 @@
 
 	<body class="{{body_class}}" data-template="base.twig">
 
-		<header class="header" >
+		<header>
 
 			{% block header %}
-				<div class="wrapper">
-					<h1 role="banner">
-						<a href="{{ site.url }}" rel="home"><img src="{{ theme.path }}/logo.png" alt="{{site.name}}"></a>
-					</h1>
+				<div>
+
+					<div id="logo">
+						<a href="{{ site.url }}"><img src="{{ theme.path }}/logo.png" alt="{{site.name}}"></a>
+					</div>
+
 					<nav id="nav-main">
+
 						<a class="nav-icon"><img src="{{ theme.path }}/navigation.svg"></a>
+
 						<div id="navigation">
 							<a class="nav-icon"><img src="{{ theme.path }}/navigation-fermer.svg"></a>
 							{% include "menu.twig" with {'menu': menu.get_items} %}
@@ -24,6 +28,7 @@
 								<a href="https://www.facebook.com/DulacDesign/"><img src="{{ theme.path }}/facebook.svg" alt="Dulac Design sur Facebook"></a>
 							</div>
 						</div>
+
 					</nav><!-- #nav -->
 				</div>
 			{% endblock %}
