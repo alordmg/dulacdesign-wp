@@ -3,116 +3,97 @@
 {% block content %}
 
   <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
-    <div id="titre-page" class="btn">
+
+    <div id="titre-page" class="btn centre-absolu">
+
       <a href="{{post.get_field('lien_decouvrir')}}">Découvrir</a>
-    </div>
-  </div>
-
-  <div id="informations">
-
-    <div class="wrapper-contenu">
-
-      <div class="intro">
-        <p>{{post.get_field('introduction')}}</p>
-      </div>
-
-      <div class="btn">
-        <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
-      </div>
 
     </div>
 
   </div>
 
-  <article>
+  <div class="texte">
 
-    <div class="blog-img droite">
-      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj1_photo')).src}}')"></div>
-    </div>
+    <div class="texte-centre">
 
-    <div class="blog-contenu gauche">
-
-      <div class="wrapper-contenu">
-
-        <div class="blog-titre">
-          <h2>{{post.get_field('prj1_titre')}}</h2>
-        </div>
-
-        <div class="blog-desc">
-          <p>{{post.get_field('prj1_desc')}}</p>
-        </div>
-
-      </div>
+      <p>{{post.get_field('introduction')}}</p>
 
     </div>
 
-    <div class="blog-img-2">
-      <img src="http://placehold.it/300x300">
+    <div class="btn">
+      <a href="{{post.get_field('btn_esp')}}">En savoir plus</a>
     </div>
 
-  </article>
-
-  <article>
-
-    <div class="blog-img gauche">
-      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj2_photo')).src}}')"></div>
-    </div>
-
-    <div class="blog-contenu droite">
-
-      <div class="blog-titre">
-        <div class="wrapper-contenu">
-          <h2>{{post.get_field('prj2_titre')}}</h2>
-        </div>
-      </div>
-
-      <div class="blog-desc">
-        <div class="wrapper-contenu">
-          <p>{{post.get_field('prj2_desc')}}</p>
-        </div>
-      </div>
-
-    </div>
-
-  </article>
-
-  <article>
-
-    <div class="blog-img droite">
-      <div class="img" style="background-image: url('{{TimberImage(post.get_field('prj3_photo')).src}}')"></div>
-    </div>
-
-    <div class="blog-contenu gauche">
-
-      <div class="wrapper-contenu">
-
-        <div class="blog-titre">
-          <h2>{{post.get_field('prj3_titre')}}</h2>
-        </div>
-
-        <div class="blog-desc">
-          <p>{{post.get_field('prj3_desc')}}</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </article>
-
-  <article class="citation">
-      <div class="citation-texte"><p>{{post.get_field('citation')}}</p></div>
-  </article>
-
-  <div id="creations" style="background-image: url('{{ theme.path }}/bg-creations.jpg')">
-    <div id="lien-creations">
-      <a href="{{post.get_field('lien_page_realisation')}}">Voir toutes nos réalisations</a>
-    </div>
   </div>
 
-  <div id="contact" class="bloc">
+  <div class="projet-container">
 
-    <div class="wrapper-contenu">
+    <div class="projet-img">
+      <img src="{{TimberImage(post.get_field('prj1_photo')).src}}"></img>
+    </div>
+
+    <div class="projet-txt texte">
+
+      <h2>{{post.get_field('prj1_titre')}}</h2>
+      <p>{{post.get_field('prj1_desc')}}</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="projet-container">
+
+    <div class="projet-img">
+      <img src="{{TimberImage(post.get_field('prj2_photo')).src}}"></img>
+    </div>
+
+    <div class="projet-txt texte">
+
+      <h2>{{post.get_field('prj2_titre')}}</h2>
+      <p>{{post.get_field('prj2_desc')}}</p>
+
+    </div>
+
+  </div>
+
+  <div class="projet-container">
+
+    <div class="projet-img">
+      <img src="{{TimberImage(post.get_field('prj3_photo')).src}}"></img>
+    </div>
+
+    <div class="projet-txt texte">
+
+      <h2>{{post.get_field('prj3_titre')}}</h2>
+      <p>{{post.get_field('prj3_desc')}}</p>
+
+    </div>
+
+  </div>
+
+  <div class="texte citation">
+
+    <div class="texte-centre">
+
+      <p>{{post.get_field('citation')}}</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cta" style="background-image: url('{{TimberImage(post.get_field('cta_bg')).src}}')">
+
+    <div class="cta-lien centre-absolu">
+      <a href="{{post.get_field('cta_lien')}}">Voir toutes nos créations</a>
+    </div>
+
+  </div>
+
+  <div class="contact texte">
+
+    <div class="texte-centre">
 
       <h2>Contactez-nous</h2>
 
