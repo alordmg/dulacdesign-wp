@@ -21,6 +21,10 @@
 
 						<a class="nav-icon"><img src="{{ theme.path }}/navigation.svg"></a>
 
+						<div id="navigation-desktop">
+							{% include "menu.twig" with {'menu': menu.get_items} %}
+						</div>
+
 						<div id="navigation">
 							<a class="nav-icon"><img src="{{ theme.path }}/navigation-fermer.svg"></a>
 							{% include "menu.twig" with {'menu': menu.get_items} %}

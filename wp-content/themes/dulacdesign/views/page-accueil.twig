@@ -26,7 +26,7 @@
 
   </div>
 
-  <div class="projet-container">
+  <div class="projet-container row-reverse">
 
     <div class="projet-img">
       <img src="{{TimberImage(post.get_field('prj1_photo')).src}}"></img>
@@ -36,6 +36,8 @@
 
       <h2>{{post.get_field('prj1_titre')}}</h2>
       <p>{{post.get_field('prj1_desc')}}</p>
+
+      <img class="img-desktop" src="{{TimberImage(post.get_field('prj1_photo')).src}}"></img>
 
     </div>
 
@@ -53,11 +55,13 @@
       <h2>{{post.get_field('prj2_titre')}}</h2>
       <p>{{post.get_field('prj2_desc')}}</p>
 
+      <img class="img-desktop" src="{{TimberImage(post.get_field('prj2_photo')).src}}"></img>
+
     </div>
 
   </div>
 
-  <div class="projet-container">
+  <div class="projet-container row-reverse">
 
     <div class="projet-img">
       <img src="{{TimberImage(post.get_field('prj3_photo')).src}}"></img>
