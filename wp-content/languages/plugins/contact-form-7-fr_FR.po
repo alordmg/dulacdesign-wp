@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-04-24 11:53:18+0000\n"
+"PO-Revision-Date: 2016-04-25 12:26:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -327,6 +327,30 @@ msgstr "<strong>Titre</strong> est le titre du formulaire de contact. Ce titre e
 msgid "<strong>Form</strong> is a content of HTML form. You can use arbitrary HTML, which is allowed inside a form element. You can also use Contact Form 7&#8217;s form-tags here."
 msgstr "<strong>Formulaire</strong> est un contenu du formulaire HTML. Vous pouvez utiliser arbitrairement du code HTML, qui est autorisé à l'intérieur d'un élément de formulaire. Vous pouvez aussi utiliser les balises de formulaire de Contact Form 7 ici."
 
+#: admin/includes/help-tabs.php:70
+msgid "<strong>Mail</strong> manages a mail template (headers and message body) that this contact form will send when users submit it. You can use Contact Form 7&#8217;s mail-tags here."
+msgstr "<strong>E-mail</strong> gère un modèle d&rsquo;e-mail (en-têtes et corps du message) que ce formulaire de contact enverra lorsqu&rsquo;un utilisateur l&rsquo;utilisera. Vous pouvez y utiliser les balises d&rsquo;e-mail Contact Form 7."
+
+#: admin/includes/help-tabs.php:71
+msgid "<strong>Mail (2)</strong> is an additional mail template that works similar to Mail. Mail (2) is different in that it is sent only when Mail has been sent successfully."
+msgstr "<strong>E-mail (2)</strong> est un modèle d&rsquo;e-mail additionnel qui fonctionne de manière similaire à E-mail. E-mail (2) diffère en ce qu&rsquo;il n&rsquo;est envoyé que lorsque E-mail a été envoyé avec succès."
+
+#: admin/includes/help-tabs.php:72
+msgid "In <strong>Messages</strong>, you can edit various types of messages used for this contact form. These messages are relatively short messages, like a validation error message you see when you leave a required field blank."
+msgstr "Dans <strong>Messages</strong>, vous pouvez modifier différents types de messages utilisés par le formulaire de contact. Ces messages sont relativement courts, comme les erreurs de validations que vous voyez lorsque un champ requis est laissé blanc."
+
+#: admin/includes/help-tabs.php:73
+msgid "<strong>Additional Settings</strong> provides a place where you can customize the behavior of this contact form by adding code snippets."
+msgstr "<strong>Réglages additionnels</strong> vous permet de personnaliser le comportement de ce formulaire de contact en ajoutant des bouts de code."
+
+#: admin/includes/help-tabs.php:75
+msgid "A form-tag is a short code enclosed in square brackets used in a form content. A form-tag generally represents an input field, and its components can be separated into four parts: type, name, options, and values. Contact Form 7 supports several types of form-tags including text fields, number fields, date fields, checkboxes, radio buttons, menus, file-uploading fields, CAPTCHAs, and quiz fields."
+msgstr "Une balise de formulaire est un code court entre crochets utilisé pour le contenu du formulaire. Une balise de formulaire est généralement représentée par un champ, et ces composants en quatre parties&nbsp;: type, nom, options et valeurs. Contact Form 7 gère plusieurs types de balises de formulaire comme des champs textes, des champs numériques, des sélecteurs de dates, des cases à cocher, des boutons radios, des listes déroulantes, des sélecteurs de fichiers, des CAPTCHAs, et des champs Quiz."
+
+#: admin/includes/help-tabs.php:76
+msgid "While form-tags have a comparatively complex syntax, you don&#8217;t need to know the syntax to add form-tags because you can use the straightforward tag generator (<strong>Generate Tag</strong> button on this screen)."
+msgstr "Comme les balises de formulaire ont une syntaxe relativement complexe, vous n&rsquo;avez pas besoin de les connaître par cœur puisque vous pouvez utiliser le générateur de balise (boutons <strong>Générer une balise</strong> sur cet écran)."
+
 #: admin/includes/help-tabs.php:78
 msgid "A mail-tag is also a short code enclosed in square brackets that you can use in every Mail and Mail (2) field. A mail-tag represents a user input value through an input field of a corresponding form-tag."
 msgstr "Une balise d&rsquo;e-mail est un code entouré de crochets que vous pouvez utiliser dans chaque champ e-mail et e-mail (2). Une balise d&rsquo;e-mail représente la valeur saisie par un utilisateur dans la balise de formulaire correspondante."
@@ -439,13 +463,21 @@ msgstr "la propriété <code>%1$s</code> de l&rsquo;objet <code>WPCF7_ContactFor
 msgid "Sending ..."
 msgstr "Envoi en cours&hellip;"
 
+#: modules/acceptance.php:130
+msgid "acceptance"
+msgstr "confirmation"
+
 #: modules/acceptance.php:138
 msgid "Generate a form-tag for an acceptance checkbox. For more details, see %s."
-msgstr "Générer une balise de case d&rsquo;acceptation. Pour plus de détails, consultez %s."
+msgstr "Générer une balise de formulaire de type case de confirmation. Pour plus de détails, référez vous à %s."
 
 #: modules/acceptance.php:140
 msgid "http://contactform7.com/acceptance-checkbox/"
 msgstr "http://contactform7.com/acceptance-checkbox/"
+
+#: modules/acceptance.php:140
+msgid "Acceptance Checkbox"
+msgstr "Case à cocher de confirmation"
 
 #: modules/acceptance.php:150 modules/checkbox.php:309 modules/date.php:169
 #: modules/file.php:253 modules/number.php:177 modules/quiz.php:181
@@ -463,6 +495,10 @@ msgstr "Options"
 #: modules/acceptance.php:159
 msgid "Make this checkbox checked by default"
 msgstr "Cocher cette case par défaut"
+
+#: modules/acceptance.php:160
+msgid "Make this work inversely"
+msgstr "Fonctionne à l&rsquo;inverse"
 
 #: modules/acceptance.php:166 modules/checkbox.php:330 modules/date.php:198
 #: modules/file.php:268 modules/number.php:206 modules/quiz.php:197
@@ -848,7 +884,7 @@ msgstr "Akismet"
 
 #: modules/text.php:259
 msgid "This field requires author's name"
-msgstr "Ce champ néessite le nom de l'auteur"
+msgstr "Ce champ nécessite le nom de l&rsquo;auteur"
 
 #: modules/text.php:264
 msgid "This field requires author's email address"
@@ -1150,7 +1186,7 @@ msgstr "Réglages additionnels (%d)"
 #: admin/edit-contact-form.php:201 admin/includes/editor.php:234
 #: admin/includes/editor.php:239
 msgid "Additional Settings"
-msgstr "Réglages complémentaires"
+msgstr "Réglages additionnels"
 
 #: admin/includes/class-contact-forms-list-table.php:11
 msgid "Title"

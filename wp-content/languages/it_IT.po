@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 4.5.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-04-23 07:35:02+0000\n"
+"PO-Revision-Date: 2016-04-26 11:39:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -775,7 +775,7 @@ msgstr "Navigazione elenco articoli"
 #: wp-includes/ms-functions.php:431 wp-includes/ms-functions.php:438
 #: wp-includes/user.php:1430
 msgid "Sorry, that username is not allowed."
-msgstr "Spiacente, nome utente non consentito."
+msgstr "Questo nome utente non è consentito."
 
 #: wp-includes/ms-functions.php:570
 msgid "Site names can only contain lowercase letters (a-z) and numbers."
@@ -1813,7 +1813,7 @@ msgstr[1] "Il tuo tema supporta %s menu. Scegli la posizione per ogni menu."
 
 #: wp-includes/theme.php:2084
 msgid "Customizer"
-msgstr "Customizer"
+msgstr "Personalizza"
 
 #: wp-includes/taxonomy.php:4172
 msgid "Could not split shared term."
@@ -4210,7 +4210,7 @@ msgstr "Non hai il permesso di creare pagine con questo utente."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2415
 msgid "Sorry, you cannot edit users."
-msgstr "Spiacente, non puoi modificare gli utenti."
+msgstr "Non puoi modificare gli utenti."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2489
 msgid "The role specified is not valid"
@@ -4219,20 +4219,20 @@ msgstr "Il ruolo specificato non è valido"
 #: wp-includes/class-wp-xmlrpc-server.php:2546
 #: wp-includes/class-wp-xmlrpc-server.php:2592
 msgid "Sorry, you cannot edit your profile."
-msgstr "Spiacente, non puoi modificare il tuo profilo."
+msgstr "Non puoi modificare il tuo profilo."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2626
 msgid "Sorry, the user cannot be updated."
-msgstr "Spiacente, l'utente non può essere aggiornato."
+msgstr "L'utente non può essere modificato."
 
 #: wp-includes/class-wp-xmlrpc-server.php:4220
 msgid "Sorry, you are not allowed to edit posts."
-msgstr "Spiacente, non si dispone del permesso per modificare gli articoli."
+msgstr "Non hai il permesso per modificare gli articoli."
 
 #: wp-includes/class-wp-xmlrpc-server.php:4224
 #: wp-includes/class-wp-xmlrpc-server.php:4294
 msgid "Sorry, revisions are disabled."
-msgstr "Spiacente, le revisioni sono disabilitate."
+msgstr "Le revisioni sono disabilitate."
 
 #: wp-includes/media-template.php:901
 msgid "Alternative Text"
@@ -5848,7 +5848,7 @@ msgstr "Non è possibile modificare le pagine."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2797
 msgid "Sorry, you do not have the right to delete this page."
-msgstr "Non disponi del permesso per eliminare questa pagina."
+msgstr "Non hai il permesso per eliminare questa pagina."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2802
 msgid "Failed to delete the page."
@@ -5856,11 +5856,11 @@ msgstr "Impossibile eliminare la pagina."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2859
 msgid "Sorry, you do not have the right to edit this page."
-msgstr "Non si dispone del permesso per modificare questa pagina."
+msgstr "Non hai il permesso per modificare questa pagina."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3056
 msgid "Sorry, you do not have the right to add a category."
-msgstr "Non si dispone dei permessi per aggiungere una categoria."
+msgstr "Non hai il permesso per aggiungere una categoria."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3084
 #: wp-includes/class-wp-xmlrpc-server.php:3086
@@ -5869,7 +5869,7 @@ msgstr "L'inserimento di una nuova categoria non è riuscito."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3131
 msgid "Sorry, you do not have the right to delete a category."
-msgstr "Non disponi del permesso per eliminare una categoria."
+msgstr "Non hai il permesso per eliminare una categoria."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3225
 #: wp-includes/class-wp-xmlrpc-server.php:3358
@@ -5952,7 +5952,7 @@ msgstr "Questo articolo non esiste."
 #: wp-includes/class-wp-xmlrpc-server.php:4689
 #: wp-includes/class-wp-xmlrpc-server.php:5363
 msgid "Sorry, you do not have the right to publish this post."
-msgstr "Spiacente, non si dispone dei permessi per pubblicare questo articolo."
+msgstr "Non hai il permesso per pubblicare questo articolo."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3294
 msgid "Invalid post type."
@@ -5968,7 +5968,7 @@ msgstr "Non si dispone del permesso per cambiare l'autore della pagina con quest
 
 #: wp-includes/class-wp-xmlrpc-server.php:5361
 msgid "Sorry, you do not have the right to publish this page."
-msgstr "Non si dispone dei permessi per pubblicare questa pagina."
+msgstr "Non hai il permesso per pubblicare questa pagina."
 
 #: wp-includes/class-wp-xmlrpc-server.php:5406
 msgid "Sorry, your entry could not be edited. Something wrong happened."
@@ -7638,7 +7638,7 @@ msgstr "Non è possibile pubblicare questo articolo. &Eacute; successo qualcosa 
 #: wp-includes/class-wp-xmlrpc-server.php:4686
 #: wp-includes/class-wp-xmlrpc-server.php:5190
 msgid "Sorry, you do not have the right to edit this post."
-msgstr "Non hai il permesso di modificare questo articolo."
+msgstr "Non hai il permesso per modificare questo articolo."
 
 #: wp-includes/class-wp-xmlrpc-server.php:4704
 msgid "For some strange yet very annoying reason, this post could not be edited."
@@ -7647,7 +7647,7 @@ msgstr "Per qualche strano motivo, non è possibile modificare questo articolo."
 #: wp-includes/class-wp-xmlrpc-server.php:1637
 #: wp-includes/class-wp-xmlrpc-server.php:4756
 msgid "Sorry, you do not have the right to delete this post."
-msgstr "Non si dispone dei permessi per cancellare questo articolo."
+msgstr "Non hai il permesso per eliminare questo articolo."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3548 wp-includes/comment.php:2800
 msgid "Sorry, comments are closed for this item."

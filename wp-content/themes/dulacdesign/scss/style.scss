@@ -23,6 +23,13 @@ p, a {
   line-height: 1.6em;
   font-weight: 300;
   margin-top: 0px;
+  opacity: 1;
+  transition: 0.75s ease;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: 0.75s ease;
 }
 
 // NAVIGATION PRINCIPALE
@@ -89,6 +96,10 @@ p, a {
 #logo {
   margin: 0;
 
+  a {
+    opacity: 1;
+  }
+
   img {
     position: absolute;
     top: 0;
@@ -102,7 +113,7 @@ p, a {
   position: relative;
   background-size: cover;
   background-position: center center;
-  height: 460px;
+  height: 100vh;
 }
 
 #titre-de-page {
@@ -322,6 +333,71 @@ p, a {
 
 // CRÉATIONS
 
+.container-ambiances {
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      border-bottom: 1px solid black;
+      text-transform: uppercase;
+
+      a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.container-creations {
+  text-align: center;
+
+  .creation {
+    position: relative;
+    height: 230px;
+    background-position: center center;
+    background-size: cover;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .creation-infos {
+      width: 90%;
+      color: white;
+
+      h2 {
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 4px;
+      }
+
+      p {
+        font-style: italic;
+        margin: 0;
+      }
+
+      p:before {
+        content: "- ";
+      }
+
+      p:after {
+        content: " -";
+      }
+    }
+  }
+}
+
 // NOS VALEURS
 
 .valeur-container {
@@ -355,11 +431,12 @@ p, a {
 // FOOTER
 
 footer {
-  margin: 15px;
+  margin: 30px;
 
-  p {
+  p, a {
     font-size: 14px;
     text-align: center;
+    margin-top: 30px;
   }
 }
 
@@ -368,10 +445,6 @@ footer {
   and (-webkit-min-device-pixel-ratio: 1) {
 
   // PAGE
-
-  #hero {
-    height: 800px;
-  }
 
   .texte {
     padding: 45px 30px;
@@ -436,7 +509,7 @@ footer {
   #nav-main #navigation-desktop {
     display: inline-block;;
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 70px;
     z-index: 999;
 
@@ -444,15 +517,21 @@ footer {
 
       li {
         display: inline-block;
-        margin-right: 60px;
+        margin-right: 40px;
 
         a {
-          font-size: 20px;
+          font-size: 16px;
           color: white;
           text-transform: uppercase;
           letter-spacing: 4px;
           font-weight: 400;
           text-decoration: none;
+          opacity: 1;
+          transition: 0.5s ease;
+        }
+        a:hover {
+          opacity: 0.5;
+          transition: 0.5s ease;
         }
       }
     }
@@ -467,10 +546,6 @@ footer {
   }
 
   // HEADER
-
-  #hero {
-    height: 650px;
-  }
 
   // PAGE
 
@@ -521,7 +596,99 @@ footer {
     }
   }
 
+  .cta {
+    height: 600px;
+
+    .cta-lien {
+      width: auto;
+      padding: 20px;
+    }
+  }
+
+  .contact input, .contact textarea {
+    max-width: 100%;
+  }
+
+  form {
+    text-align: left;
+  }
+
   // CRÉATIONS
+
+  .container-ambiances {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 160px;
+    justify-content: space-between;
+    align-items: center;
+    width: 88.28125%;
+    margin: auto;
+
+    ul {
+      width: 100%;
+
+      li {
+        display: inline-block;
+        //flex-grow: 1;
+        //flex-basis: auto;
+        //padding: 15px;
+        width: 16.38%;
+        border: 1px solid black;
+        //text-transform: uppercase;
+
+        a {
+          //font-weight: 500;
+          //text-decoration: none;
+          //color: black;
+        }
+      }
+
+      li:hover {
+        background-color: black;
+
+        a {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .container-creations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 88.28125%;
+    margin: auto;
+
+    .creation {
+      width: 32%;
+      margin-bottom: 30px;
+      height: 350px;
+
+      .creation-infos {
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        p:before {
+
+        }
+
+        p:after {
+
+        }
+      }
+    }
+  }
+
 
   // NOS VALEURS
 
