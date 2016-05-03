@@ -14,12 +14,9 @@
 
     <ul>
 
-      <li><a href="#">Ambiance 1</a></li>
-      <li><a href="#">Ambiance 2</a></li>
-      <li><a href="#">Ambiance 3</a></li>
-      <li><a href="#">Ambiance 4</a></li>
-      <li><a href="#">Ambiance 5</a></li>
-      <li><a href="#">Ambiance 6</a></li>
+      {% for cat in categories %}
+      <li><a href="{{cat.link}}">{{cat.name}}</a></li>
+      {% endfor %}
 
     </ul>
 
@@ -27,98 +24,18 @@
 
   <div class="container-creations">
 
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <a href="#">
+  {% for post in posts %}
+
+    <div class="creation" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+      <a href="{{post.link}}">
         <div class="creation-infos centre-absolu">
-          <h2>MAISON BAPTISTE & MAUD</h2>
+          <h2>{{post.title}}</h2>
           <p>20 décembre 2016</p>
         </div>
       </a>
     </div>
 
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
-
-    <div class="creation" style="background-image: url('http://placehold.it/320x320');">
-      <div class="creation-infos centre-absolu">
-        <h2>MAISON BAPTISTE & MAUD</h2>
-        <p>20 décembre 2016</p>
-      </div>
-    </div>
+  {% endfor %}
 
   </div>
 
