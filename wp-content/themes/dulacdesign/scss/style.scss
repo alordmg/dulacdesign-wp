@@ -95,6 +95,7 @@ a:hover {
 
 #logo {
   margin: 0;
+  z-index: 999;
 
   a {
     opacity: 1;
@@ -113,6 +114,10 @@ a:hover {
   position: relative;
   background-size: cover;
   background-position: center center;
+  height: 70vh;
+}
+
+.home #hero {
   height: 100vh;
 }
 
@@ -158,11 +163,12 @@ a:hover {
     padding: 30px 0px;
 
     a {
+      font-size: 16px;
       display: inline-block;
       border: 1px solid black;
       padding: 10px 25px;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       font-weight: 700;
       text-decoration: none;
       color: black;
@@ -280,6 +286,10 @@ a:hover {
     letter-spacing: 4px;
   }
 
+  .wpcf7 {
+    margin-top: 50px;
+  }
+
   input, textarea {
     display: block;
     background-color: #f6f6f6;
@@ -306,12 +316,15 @@ a:hover {
   input[type="submit"] {
     background: none;
     display: block;
-    width: 100%;
-    border: 3px solid black;
-    font-size: 18px;
+    //width: 100%;
+    border: 2px solid black;
+    font-size: 16px;
     color: black;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: 700;
+    float: right;
   }
 
   form {
@@ -404,7 +417,7 @@ a:hover {
 
   .photo {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 
     img {
       width: 100%;
@@ -514,21 +527,15 @@ footer {
   // CRÉATION (FICHE INDIVIDUELLE)
 
   .container-photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     width: 95%;
     margin: auto;
+    column-count: 2;
+    column-gap: 10px;
 
     .photo {
-      width: 46%;
-      //margin-bottom: 20px;
-
-      img {
-        //width: 100%;
-        //height: auto;
-      }
+      display: inline-block;
+      margin: 0 0 0em;
+      width: 100%;
     }
   }
 
@@ -544,16 +551,20 @@ footer {
 
   #nav-main #navigation-desktop {
     display: inline-block;;
-    position: absolute;
-    top: 20px;
-    right: 70px;
-    z-index: 999;
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+
 
     ul {
+      float: right;
+      margin-top: 25px;
+      margin-bottom: 20px;
 
       li {
         display: inline-block;
-        margin-right: 40px;
+        //margin-right: 40px;
+        height: 30px;
 
         a {
           font-size: 16px;
@@ -571,6 +582,14 @@ footer {
         }
       }
     }
+  }
+
+  .nav-fonce {
+    color: black !important;
+  }
+
+  .bg-blanc {
+    background-color: white;
   }
 
   .nav-icon {
@@ -641,7 +660,7 @@ footer {
 
     .cta-lien {
       width: auto;
-      padding: 20px;
+      padding: 20px 25px;
     }
   }
 
@@ -729,6 +748,21 @@ footer {
     }
   }
 
+  // CRÉATION (FICHE INDIVIDUELLE)
+
+  .container-photos {
+    //width: 95%;
+    //margin: auto;
+    column-count: 4;
+    column-gap: 15px;
+
+    .photo {
+      //display: inline-block;
+      margin: 0 0 15px;
+      width: 100%;
+    }
+  }
+
 
   // NOS VALEURS
 
@@ -748,3 +782,5 @@ footer {
 
 
 }
+
+@import 'chocolat';

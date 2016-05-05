@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src|resize(1920)}}');">
 
     <div id="titre-de-page">
       <h1>{{ post.title }}</h1>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="valeur-img">
-      <img src="{{TimberImage(post.get_field('valeur_1_img')).src}}"></img>
+      <img src="{{TimberImage(post.get_field('valeur_1_img')).src|resize(1200)}}"></img>
     </div>
 
   </div>
@@ -48,7 +48,7 @@
   <div class="valeur-container">
 
     <div class="valeur-img">
-      <img src="{{TimberImage(post.get_field('valeur_2_img')).src}}"></img>
+      <img src="{{TimberImage(post.get_field('valeur_2_img')).src|resize(1200)}}"></img>
     </div>
 
     <div class="valeur-txt texte">
@@ -60,7 +60,7 @@
 
   </div>
 
-  <div class="texte citation"  style="background-image: url('{{TimberImage(post.get_field('citation_bg')).src}}');">
+  <div class="texte citation"  style="background-image: url('{{TimberImage(post.get_field('citation_bg')).src|resize(1920)}}');">
 
     <div class="texte-centre centre-absolu">
 

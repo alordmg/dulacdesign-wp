@@ -2,11 +2,11 @@
 
 {% block content %}
 
-  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
+  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src|resize(1920)}}');">
 
     <div id="titre-page" class="btn centre-absolu">
 
-      <a data-scroll href="#intro">Découvrir</a>
+      <a class="scroll-to" href="#intro">Découvrir</a>
 
     </div>
 
@@ -29,7 +29,7 @@
   <div class="projet-container row-reverse">
 
     <div class="projet-img">
-      <img src="{{TimberImage(post.get_field('prj1_photo')).src}}"></img>
+      <img src="{{TimberImage(post.get_field('prj1_photo')).src|resize(1200)}}"></img>
     </div>
 
     <div class="projet-txt texte">
@@ -47,7 +47,7 @@
   <div class="projet-container">
 
     <div class="projet-img">
-      <img src="{{TimberImage(post.get_field('prj2_photo')).src}}"></img>
+      <img src="{{TimberImage(post.get_field('prj2_photo')).src|resize(1200)}}"></img>
     </div>
 
     <div class="projet-txt texte">
@@ -64,7 +64,7 @@
   <div class="projet-container row-reverse">
 
     <div class="projet-img">
-      <img src="{{TimberImage(post.get_field('prj3_photo')).src}}"></img>
+      <img src="{{TimberImage(post.get_field('prj3_photo')).src|resize(1200)}}"></img>
     </div>
 
     <div class="projet-txt texte">
@@ -87,7 +87,7 @@
   </div>
 
 
-  <div class="cta" style="background-image: url('{{TimberImage(post.get_field('cta_bg')).src}}')">
+  <div class="cta" style="background-image: url('{{TimberImage(post.get_field('cta_bg')).src|resize(1920)}}')">
 
     <div class="cta-lien centre-absolu">
       <a href="{{post.get_field('cta_lien')}}">Voir toutes nos créations</a>

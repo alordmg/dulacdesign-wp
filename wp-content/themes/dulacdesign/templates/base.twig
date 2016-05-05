@@ -63,12 +63,8 @@
 			{{ function('wp_footer') }}
 		{% endblock %}
 
-		<script>
-			smoothScroll.init({
-				speed: 750,
-				easing: 'easeInOutQuad',
-			});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="{{site.theme.link}}/site.min.js"></script>
 
 	</body>
 </html>
