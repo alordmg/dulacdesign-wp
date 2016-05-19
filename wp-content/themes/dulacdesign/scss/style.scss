@@ -216,7 +216,15 @@ a:hover {
 }
 
 .projet-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
   //justify-content: center;
@@ -227,6 +235,7 @@ a:hover {
   .projet-img {
     overflow: hidden;
     width: 100%;
+    height: 300px;
     background-size: cover;
     background-position: center center;
 
@@ -374,6 +383,7 @@ a:hover {
 
 .container-creations {
   text-align: center;
+  padding-top: 20px;
 
   .creation {
     position: relative;
@@ -419,7 +429,7 @@ a:hover {
 
   .photo {
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 
     img {
       width: 100%;
@@ -431,7 +441,15 @@ a:hover {
 // NOS VALEURS
 
 .valeur-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -504,6 +522,10 @@ footer {
   }
 
   .row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
@@ -532,7 +554,7 @@ footer {
     width: 95%;
     margin: auto;
     column-count: 2;
-    column-gap: 10px;
+    column-gap: 5px;
 
     .photo {
       display: inline-block;
@@ -686,7 +708,15 @@ footer {
   // CRÉATIONS
 
   .container-ambiances {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: nowrap;
     height: 160px;
@@ -726,12 +756,21 @@ footer {
   }
 
   .container-creations {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 88.28125%;
     margin: auto;
+    padding-top: 50px;
 
     .creation {
       width: 32%;
@@ -765,11 +804,11 @@ footer {
     //width: 95%;
     //margin: auto;
     column-count: 4;
-    column-gap: 15px;
+    column-gap: 5px;
 
     .photo {
       //display: inline-block;
-      margin: 0 0 15px;
+      margin: 0 0 0px;
       width: 100%;
     }
   }

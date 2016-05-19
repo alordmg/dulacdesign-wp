@@ -15,13 +15,16 @@
 
 					<nav id="nav-main">
 
-
+						<div id="logo">
+							<div class="logo-noir" style="display:none"><a href="{{ site.url }}"><img id="logo-img" src="{{ theme.path }}/logo-noir.png" srcset="{{ theme.path }}/logo-noir.png 1x, {{ theme.path }}/logo-noir@2x.png 2x"></a></div>
+							<a href="{{ site.url }}"><img id="logo-img" src="{{ theme.path }}/logo.png" srcset="{{ theme.path }}/logo.png 1x, {{ theme.path }}/logo@2x.png 2x"></a>
+						</div>
 
 						<a class="nav-icon"><img src="{{ theme.path }}/navigation.svg"></a>
 
 						<div id="navigation-desktop">
 							<div id="logo">
-								<div id="logo-noir" style="display:none"><a href="{{ site.url }}"><img id="logo-img" src="{{ theme.path }}/logo-noir.png" srcset="{{ theme.path }}/logo-noir.png 1x, {{ theme.path }}/logo-noir@2x.png 2x"></a></div>
+								<div class="logo-noir" style="display:none"><a href="{{ site.url }}"><img id="logo-img" src="{{ theme.path }}/logo-noir.png" srcset="{{ theme.path }}/logo-noir.png 1x, {{ theme.path }}/logo-noir@2x.png 2x"></a></div>
 								<a href="{{ site.url }}"><img id="logo-img" src="{{ theme.path }}/logo.png" srcset="{{ theme.path }}/logo.png 1x, {{ theme.path }}/logo@2x.png 2x"></a>
 							</div>
 							{% include "menu.twig" with {'menu': menu.get_items} %}
