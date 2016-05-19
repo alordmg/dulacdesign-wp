@@ -227,6 +227,8 @@ a:hover {
   .projet-img {
     overflow: hidden;
     width: 100%;
+    background-size: cover;
+    background-position: center center;
 
     img {
       height: 285px;
@@ -636,8 +638,17 @@ footer {
     }
 
     .projet-txt {
-      height: 600px;
+      //height: 300px;
       position: relative;
+
+      .texte-centre {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+      }
 
       .img-desktop {
         display: block;

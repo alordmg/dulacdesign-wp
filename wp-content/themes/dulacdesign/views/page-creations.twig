@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src|resize(1920)}}');">
+  <div id="hero" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src}}');">
 
     <div id="titre-de-page">
       <h1>{{ post.title }}</h1>
@@ -10,7 +10,7 @@
 
   </div>
 
-  <div class="container-ambiances">
+  <!-- <div class="container-ambiances">
 
     <ul>
 
@@ -20,13 +20,13 @@
 
     </ul>
 
-  </div>
+  </div> -->
 
   <div class="container-creations">
 
   {% for post in posts %}
 
-    <div class="creation" style="background-image: url('{{TimberImage(post.get_field('img_entete')).src|resize(800)}}');">
+    <div class="creation" style="background-image: url('{{post.thumbnail.src}}');">
       <a href="{{post.link}}">
         <div class="creation-infos centre-absolu">
           <h2>{{post.title}}</h2>
@@ -38,6 +38,8 @@
   {% endfor %}
 
   </div>
+
+  <div style="clear: both"></div>
 
 
 {% endblock %}

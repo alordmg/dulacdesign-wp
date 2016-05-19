@@ -9,11 +9,13 @@ $(document).ready(function() {
       if (y >= hauteurHero){
         $('#navigation-desktop').addClass('bg-blanc');
         $('#navigation-desktop ul li a').addClass('nav-fonce');
+        $('#logo-noir').show();
       }
 
       if (y <= hauteurHero){
         $('#navigation-desktop').removeClass('bg-blanc');
         $('#navigation-desktop ul li a').removeClass('nav-fonce');
+        $('#logo-noir').hide();
       }
   });
 

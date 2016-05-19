@@ -1,7 +1,7 @@
 <?php
 
-//update_option( 'siteurl', 'http://localhost:8888/dulacdesign-wp' );
-//update_option( 'home', 'http://localhost:8888/dulacdesign-wp' );
+//update_option( 'siteurl', 'http://dulacdesign.com' );
+//update_option( 'home', 'http://dulacdesign.com' );
 
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
